@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prime or not</h1>
+    <script>
+
+
+      
+
+      function prime(number) {
+       var prime=true;
+       for(let i=2;i<=10;i++){
+        if(number%i===0){
+          prime=false;
+          break;
+        }
+       }
+       if(prime){
+        console.log("number is Prime")
+       }else{
+        console.log("number is notPrime");
+       }
+       
+       
+      }
+      prime(97);
+
+
+    </script>
+  </body>
+</html>

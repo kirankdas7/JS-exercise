@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>palindrome</h1>
+    <script>
+
+
+      
+
+      function palindrome(string) {
+      var leg=string.length;
+        for(let i=0;i<leg;i++){
+            if(string[i]===string[(leg-1)-i]){
+                console.log(string[i]+" is equal to "+string[(leg-1)-i]);
+                var palindrom=true
+            }
+            else{
+                var palindrom=false
+                break;
+                
+                
+            }
+            
+        }
+        if(palindrom==true){
+            console.log(string+ ": is PALINDROME");
+        }else{
+            console.log(string+ ": not PALINDROME");
+            
+        }
+       
+      }
+      
+      palindrome('malayalam');
+
+
+    </script>
+  </body>
+</html>
